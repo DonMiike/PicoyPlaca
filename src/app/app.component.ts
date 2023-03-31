@@ -29,32 +29,7 @@ export class AppComponent {
       }
     }
   }
-  /*  validarPicoPlaca(digito: number, fecha: string, hora: number, minuto: number): boolean {
-     debugger;
-     const diaSemana = new Date(fecha).getDay();
-     if (diaSemana === 5 || diaSemana === 6) {
-       return false;
-     } else if ((hora >= 19 && hora <= 23) || (hora >= 0 && hora <= 4)) {
-       return false;
-     } else if ((digito === 1 || digito === 2) && ((hora >= 9 && minuto >= 0) && (hora <= 15)) && (diaSemana == 0)) {
-       return false;
-     } else if ((digito === 3 || digito === 4) && ((hora >= 9 && minuto >= 0) && (hora <= 15)) && (diaSemana == 1)) {
-       return false;
-     } else if ((digito === 5 || digito === 6) && ((hora >= 9 && minuto >= 0) && (hora <= 15)) && (diaSemana == 2)) {
-       return false;
-     } else if ((digito === 7 || digito === 8) && ((hora >= 9 && minuto >= 0) && (hora <= 15)) && (diaSemana == 3)) {
-       return false;
-     }
-     if (diaSemana == 4) {
-       if ((digito === 9 || digito === 0) && ((hora >= 5 && minuto >= 0) && (hora <= 8))) {
-         return true;
-       } else {
-         return false;
-       }
-     }
-     return true;
- 
-   } */
+
 
   validarPicoPlaca(digito: number, fecha: string, hora: number, minuto: number): boolean {
     debugger;
@@ -63,35 +38,35 @@ export class AppComponent {
       return false;
     }
     if (diaSemana == 0) {
-      if ((digito === 1 || digito === 2) && (((hora >= 5 && minuto >= 0) && (hora <= 8)) || ((hora >= 16 && minuto >= 0) && (hora <= 18)))) {
+      if ((digito === 1 || digito === 2) && (((hora >= 5 && minuto >= 0) && (hora <= 8)) || ((hora >= 16 && minuto >= 0) && (hora <= 20)))) {
         return true;
       } else {
         return false;
       }
     }
     if (diaSemana == 1) {
-      if ((digito === 3 || digito === 4) && (((hora >= 5 && minuto >= 0) && (hora <= 8)) || ((hora >= 16 && minuto >= 0) && (hora <= 18)))) {
+      if ((digito === 3 || digito === 4) && (((hora >= 5 && minuto >= 0) && (hora <= 8)) || ((hora >= 16 && minuto >= 0) && (hora <= 20)))) {
         return true;
       } else {
         return false;
       }
     }
     if (diaSemana == 2) {
-      if ((digito === 5 || digito === 6) && (((hora >= 5 && minuto >= 0) && (hora <= 8)) || ((hora >= 16 && minuto >= 0) && (hora <= 18)))) {
+      if ((digito === 5 || digito === 6) && (((hora >= 5 && minuto >= 0) && (hora <= 8)) || ((hora >= 16 && minuto >= 0) && (hora <= 20)))) {
         return true;
       } else {
         return false;
       }
     }
     if (diaSemana == 3) {
-      if ((digito === 7 || digito === 8) && (((hora >= 5 && minuto >= 0) && (hora <= 8)) || ((hora >= 16 && minuto >= 0) && (hora <= 18)))) {
+      if ((digito === 7 || digito === 8) && (((hora >= 5 && minuto >= 0) && (hora <= 8)) || ((hora >= 16 && minuto >= 0) && (hora <= 20)))) {
         return true;
       } else {
         return false;
       }
     }
     if (diaSemana == 4) {
-      if ((digito === 9 || digito === 0) && (((hora >= 5 && minuto >= 0) && (hora <= 8)) || ((hora >= 16 && minuto >= 0) && (hora <= 18)))) {
+      if ((digito === 9 || digito === 0) && (((hora >= 5 && minuto >= 0) && (hora <= 8)) || ((hora >= 16 && minuto >= 0) && (hora <= 20)))) {
         return true;
       } else {
         return false;
@@ -102,29 +77,7 @@ export class AppComponent {
   }
 
 
-  /*  validarPicoPlaca(digito: number, fecha: string, hora: number, minuto: number): boolean {
-     debugger;
- 
-     const diaSemana = new Date(fecha).getDay();
-     if (diaSemana === 5 || diaSemana === 6) {
-       return false;
-     } else if ((digito === 1 || digito === 2) && (hora >= 9 && minuto >= 0 && minuto <= 59) && (hora <= 16 && minuto >= 0 && minuto <= 59)) {
-       return false;
-     } else if ((digito === 3 || digito === 4) && (hora >= 9 && minuto >= 0 && minuto <= 59) || (hora === 16 && minuto >= 0 && minuto <= 59)) {
-       return false;
-     } else if ((digito === 5 || digito === 6) && (hora >= 9 && minuto >= 0 && minuto <= 59) || (hora === 16 && minuto >= 0 && minuto <= 59)) {
-       return false;
-     } else if ((digito === 7 || digito === 8) && (hora >= 9 && minuto >= 0 && minuto <= 59) || (hora === 16 && minuto >= 0 && minuto <= 59)) {
-       return false;
-     }
-     else if ((digito === 9 || digito === 0)) {
-       if ((hora >= 9 && minuto >= 0 && minuto <= 59) || (hora === 16 && minuto >= 0 && minuto <= 59)) {
-         return false;
-       }
-     }
-     return true;
-   }
-  */
+
 }
 
 
